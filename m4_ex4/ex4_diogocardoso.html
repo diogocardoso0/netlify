@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h1>Ficha de Inscrição</h1>
+
+    <p>Todos os campos são de carácter obrigatório</p>
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="id-name">Nome:</label>
+            <input type="text" id="id-name" name="id-name"><br>
+            <label for="birthday">Data de nascimento:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+            <label for="doc-type">Doc. de Identificação:</label>
+            <input list="id-number">
+            <datalist id="id-number">
+                <option value="Bilhete de identidade">
+                <option value="Cartão de Cidadão">
+                <option value="Passaporte">
+            </datalist>
+            <input type="text" id="id-number" name="doc"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Habilitações Académicas:</legend>
+            <label for="academic-level">Escolaridade:</label>
+            <select id="id-academic">
+                <option value="9º Ano">9º Ano</option>>
+                <option value="8º Ano">8º Ano</option>>
+                <option value="7º Ano">7º Ano</option>>
+            </select>
+            <label for="id-school">Estabelecimento de ensino:</label>
+            <input type="text" id="id-school" name="id-school"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Curso Profissional Pretendido:</legend>
+            <label>Seleção do Curso:</label><br>
+            <input type="radio" id="tgpsi" name="curso" value="TGPSI">
+            <label for="tgpsi">TGPSI</label><br>
+            <input type="radio" id="tgei" name="curso" value="TGEI">
+            <label for="tgei">TGEI</label><br>
+            <input type="radio" id="cmrpp" name="curso" value="CMRPP">
+            <label for="cmrpp">CMRPP</label>
+        </fieldset>
+
+        <input type="submit" value="Submeter Inscrição">
+
+    </form>
+
+    <footer>
+        <p>&copy; 2023 Form. All rights reserved.</p>
+        <p> Desenvolvido por Diogo Cardoso | al25256@aemaia.com.</p>
+    </footer>
+
+</body>
+
+</html>
