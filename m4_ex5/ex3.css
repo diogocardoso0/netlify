@@ -1,0 +1,12 @@
+* {
+  padding: 10px;
+  background-color: darkgray;
+}
+
+fieldset, label, li {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  display: inline-block;
+}

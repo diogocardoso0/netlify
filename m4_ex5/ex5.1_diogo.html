@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- Define a versão do HTML que estamos a usar(no caso, HTML5) -->
+
+<html lang="pt-pt"> <!-- é uma indicação mais específica do idioma, -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Nome, sexo e escolaridade</title>
+	
+	<!-- Define o icon da página (imagem que aparece na aba do navegador) -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- código para adicionar múltiplos tamanhos de favicon -->
+	<link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="favicon-48x48.png" sizes="48x48" type="image/png">
+	<link rel="icon" href="favicon-64x64.png" sizes="64x64" type="image/png">
+	<!-- Link para um arquivo externo de folha de estilo (CSS) -->
+    <link rel="stylesheet" href="ex1.css">
+	
+</head>
+
+<!-- todo o conteúdo visível da página -->
+<body>
+
+    <header>
+        
+    </header>
+
+
+    <main>
+        <table>
+                    <tr>
+                        <td>Nome</td>
+                        <td> <input type="text" id="fname" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo</td>
+                        <td>
+                            <li><input type="radio" id="Femenino" name="sexo"></li>
+                            <li><label for="Femenino">Feminino</label></li>
+                            <li><input type="radio" id="Masculino" name="sexo">></li>
+                            <li><label for="Masculino">Masculino</label>></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="cars">Escolaridade:</label>
+                    
+                            <select name="cars" id="cars">
+                                <option value="1º Grau">1º Grau</option>
+                                <option value="2º Grau">2º Grau</option>
+                                <option value="superior">Superior</option>
+                            </select>
+                        </td>
+                    </tr>
+        </table>
+
+    </main>
+
+
+    <footer>
+        <p>Diogo Cardoso</p>
+        <p>Email: al25256@aemaia.com</p>
+    </footer>
+
+</body>
+</html>

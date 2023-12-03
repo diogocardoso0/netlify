@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- Define a versão do HTML que estamos a usar(no caso, HTML5) -->
+
+<html lang="pt-pt"> <!-- é uma indicação mais específica do idioma, -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Cartão de Crédito</title>
+	
+	<!-- Define o icon da página (imagem que aparece na aba do navegador) -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- código para adicionar múltiplos tamanhos de favicon -->
+	<link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="favicon-48x48.png" sizes="48x48" type="image/png">
+	<link rel="icon" href="favicon-64x64.png" sizes="64x64" type="image/png">
+	<!-- Link para um arquivo externo de folha de estilo (CSS) -->
+    <link rel="stylesheet" href="ex2.css">
+	
+</head>
+
+<!-- todo o conteúdo visível da página -->
+<body>
+
+    <header>
+        
+    </header>
+
+
+    <main>
+                <table>
+                    <tr>
+                        <td>Número</td>
+                        <td><input type="text" id="fnumber" name="fnumber"></td>
+                    </tr>
+                    <tr>
+                        <td>Bandeira</td>
+                        <td>
+                            <input type="radio" id="visa" name="bandeira">
+                            <img src="visa.gif" alt="visa" for="visa">
+                            <input type="radio" id="mastercard" name="bandeira">
+                            <img src="master.gif" alt="mastercard" for="mastercard">
+                            <input type="radio" id="amex" name="bandeira">
+                            <img src="amex.gif" alt="amex" for="amex">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label for="date">Validade:</label></td>
+                            <td>
+                            <select name="date" id="date">
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+    </main>
+
+
+    <footer>
+        <p>Diogo Cardoso</p>
+        <p>Email: al25256@aemaia.com</p>
+    </footer>
+
+</body>
+</html>

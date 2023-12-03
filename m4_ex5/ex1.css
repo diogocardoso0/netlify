@@ -1,0 +1,14 @@
+* {
+  padding: 10px;
+}
+
+th, td {
+    text-align: left;
+    border-style: inset;
+  }
+
+
+  table {
+    text-align: left;
+    border-style: outset;
+  }

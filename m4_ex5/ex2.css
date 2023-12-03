@@ -1,0 +1,20 @@
+* {
+    padding: 10px;
+  }
+  
+  th, td {
+      text-align: left;
+      border-style: inset;
+    }
+  
+  
+    table {
+      text-align: left;
+      border-style: outset;
+    }
+
+    img {
+        display: block;
+        max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner pai */
+        height: auto; /* Mantém a proporção original da imagem */
+    }

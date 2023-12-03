@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex4.css">
+    <title>Formulário de Pré-Matrícula</title>
+</head>
+<body>
+    <div class="container">
+        <form id="preMatriculaForm">
+            <label for="nomeAluno">Nome do Aluno:</label>
+            <input type="text" id="nomeAluno" name="nomeAluno" maxlength="40" required>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="text" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa" required>
+
+            <label for="nomeMae">Nome da Mãe:</label>
+            <input type="text" id="nomeMae" name="nomeMae" maxlength="40" required>
+
+            <label for="nomePai">Nome do Pai:</label>
+            <input type="text" id="nomePai" name="nomePai" maxlength="40" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" maxlength="9" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" maxlength="40" required>
+
+            <label for="anoEscolar">Ano Escolar:</label>
+            <select id="anoEscolar" name="anoEscolar" required>
+                <option value="" disabled selected>Selecione o Ano</option>
+                <option value="preEscolar">Pré-Escolar</option>
+                <option value="1oAno">1º Ano</option>
+                <option value="2oAno">2º Ano</option>
+                <option value="3oAno">3º Ano</option>
+                <option value="4oAno">4º Ano</option>
+                <option value="5oAno">5º Ano</option>
+                <option value="6oAno">6º Ano</option>
+            </select>
+
+            <label for="horarioPreferencial">Horário Preferencial:</label>
+            <input type="radio" id="manha" name="horarioPreferencial" value="manha" required>
+            <label for="manha">Manhã</label>
+            <input type="radio" id="tarde" name="horarioPreferencial" value="tarde" required>
+            <label for="tarde">Tarde</label>
+
+            <br><label for="atividadesExtra">Atividades Extra-Curriculares:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="informatica" name="atividadesExtra" value="informatica">
+                <label for="informatica">Informática</label>
+                <input type="checkbox" id="musica" name="atividadesExtra" value="musica">
+                <label for="musica">Música</label>
+                <input type="checkbox" id="ballet" name="atividadesExtra" value="ballet">
+                <label for="ballet">Ballet</label>
+                <input type="checkbox" id="pintura" name="atividadesExtra" value="pintura">
+                <label for="pintura">Pintura</label>
+                <input type="checkbox" id="judo" name="atividadesExtra" value="judo">
+                <label for="judo">Judo</label>
+                <input type="checkbox" id="futebol" name="atividadesExtra" value="futebol">
+                <label for="futebol">Futebol</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+    <footer>
+      <p>Diogo Cardoso</p>
+      <p>Email: al25256@aemaia.com</p>
+  </footer>
+</body>
+</html>

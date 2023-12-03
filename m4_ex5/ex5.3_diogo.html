@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- Define a versão do HTML que estamos a usar(no caso, HTML5) -->
+
+<html lang="pt-pt"> <!-- é uma indicação mais específica do idioma, -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Pet Shop de Aquários</title>
+	
+	<!-- Define o icon da página (imagem que aparece na aba do navegador) -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- código para adicionar múltiplos tamanhos de favicon -->
+	<link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="favicon-48x48.png" sizes="48x48" type="image/png">
+	<link rel="icon" href="favicon-64x64.png" sizes="64x64" type="image/png">
+	<!-- Link para um arquivo externo de folha de estilo (CSS) -->
+    <link rel="stylesheet" href="ex3.css">
+	
+</head>
+
+<!-- todo o conteúdo visível da página -->
+<body>
+
+    <header>
+        
+    </header>
+
+
+    <main>
+        <fieldset>
+            <legend>Informações do Aquário</legend>
+            <label for="ph">PH do Aquário:</label>
+            <li><input type="radio" id="Acido" name="acido">Acido</li>
+            <li><input type="radio" id="Alcalino" name="alcalino">Alcalino</li>
+            <fieldset>
+                <legend>Peixes</legend>
+                <label>Quantidade</label>
+                <input type="text" id="qnumber" name="qnumber"><br>
+
+                <label for="especie">Espécie:</label>
+                <select name="especie" id="cars">
+                    <option value="Espada">Espada</option>
+                    <option value="Molinésia">Malinésia</option>
+                    <option value="Plati">Plati</option>
+                </select>
+              </fieldset><br>
+              <label for="qtd">Outros:</label><br>
+              <input type="checkbox" name="ppedras" value="pedras"> Pedras
+              <input type="checkbox" name="pplantas" value="opcao1"> Plantas
+
+          </fieldset>
+    </main>
+
+
+    <footer>
+        <p>Diogo Cardoso</p>
+        <p>Email: al25256@aemaia.com</p>
+    </footer>
+
+</body>
+</html>
