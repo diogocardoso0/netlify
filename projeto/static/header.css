@@ -1,0 +1,163 @@
+/* Reset de estilos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+  margin: 20px 15px; /* Adicionado margem para espaçamento no topo e laterais */
+}
+
+/* Estilos do cabeçalho */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px; /* Ajustado o padding para conteúdo interno */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Alterado a borda para uma sombra */
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: box-shadow 0.5s ease; /* Ajustado a transição para a sombra */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos do logotipo */
+.logo {
+  margin-right: auto;
+}
+
+/* Estilos dos links de navegação */
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+/* Estilos dos links e conteúdo da sobreposição */
+.nav__links a,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000; /* Alterada a cor do texto dos itens do menu para preto */
+  text-decoration: none;
+}
+
+/* Estilos dos itens da lista de navegação */
+.nav__links li {
+  padding: 0px 15px; /* Reduzido o padding */
+}
+
+/* Transição de cor ao passar o rato sobre os links da navegação */
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #b40000; /* Cor alterada ao passar o rato sobre os links */
+}
+
+/* Estilos do botão Call-to-Action (CTA) */
+.cta {
+  margin-left: 15px; /* Reduzida a margem */
+  padding: 8px 20px; /* Reduzido o padding */
+  background-color: #b40000;
+  color: #fff; /* Alterada a cor do texto do botão para branco */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: #b40000;
+}
+
+/* Navegação móvel */
+
+/* Ícone do menu */
+.menu {
+  display: none;
+}
+
+/* Estilos da sobreposição para dispositivos móveis */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+/* Conteúdo da sobreposição */
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos dos links na sobreposição */
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #b40000; /* Cor alterada ao passar o rato/focar nos links */
+}
+
+/* Botão de fechar a sobreposição */
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+  cursor: pointer;
+}
+
+/* Estilos da imagem */
+img {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* Media query para ecrãs mais pequenos em altura */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Media query para ecrãs com largura máxima de 800px */
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}

@@ -1,0 +1,109 @@
+/* Reset de estilos e definição da caixa de modelo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos da lista de cartões usando um layout de grelha */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Layout responsivo com colunas auto-ajustáveis */
+    max-width: 1250px;   /* Largura máxima da lista de cartões */
+    padding-top: 30px;   /* Espaçamento superior de 30px */
+    margin: 10px auto;   /* Margem superior e inferior de 10px, e margem lateral automática */
+    gap: 10px;           /* Espaçamento entre os cartões */
+}
+
+/* Estilos gerais para os cartões individuais */
+.card-list .card-item {
+    background: #fff;           /* Fundo branco para os cartões */
+    padding: 8px;               /* Preenchimento interno de 8px */
+    border-radius: 8px;         /* Borda arredondada */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04); /* Sombra suave */
+    list-style: none;           /* Remover estilos de lista padrão */
+    cursor: pointer;            /* Cursor ao passar por cima */
+    text-decoration: none;      /* Remover sublinhado padrão */
+    border: 2px solid transparent; /* Borda inicial transparente */
+    transition: border 0.5s ease; /* Transição suave para a borda */
+}
+
+/* Efeito de borda ao passar o rato sobre o cartão */
+.card-list .card-item:hover {
+    border: 2px solid #000;     /* Borda preta ao passar o rato sobre o cartão */
+}
+
+/* Estilos para a imagem dentro do cartão */
+.card-list .card-item img {
+    width: 100%;                /* Imagem com largura de 100% do seu contentor */
+    aspect-ratio: 16/9;         /* Proporção de 16:9 para manter a relação de aspecto */
+    border-radius: 8px;         /* Borda arredondada */
+    object-fit: cover;          /* Ajustar a imagem para cobrir o contentor mantendo as proporções */
+}
+
+/* Estilos para a etiqueta (span) dentro do cartão */
+.card-list span {
+    display: inline-block;      /* Mostrar em linha, respeitando as margens superior e inferior */
+    background: #F7DFF5;        /* Fundo de cor específica */
+    margin-top: 32px;           /* Margem superior de 32px */
+    padding: 8px 15px;          /* Preenchimento interno */
+    font-size: 0.75rem;         /* Tamanho da fonte */
+    border-radius: 50px;        /* Borda arredondada */
+    font-weight: 600;           /* Peso da fonte */
+}  
+
+/* Estilos específicos para uma etiqueta com a classe 'maia' */
+.card-list .maia {
+    background-color: #d1e8ff;  /* Cor de fundo específica */
+    color: #2968a8;             /* Cor do texto específica */
+}
+
+/* Estilos específicos para uma etiqueta com a classe 'gueifães' */
+.card-list .gueifães {
+    background-color: #d6f8d6;  /* Cor de fundo específica */
+    color: #205c20;             /* Cor do texto específica */
+}
+
+/* Estilos para o título (h3) dentro de um cartão individual */
+.card-item h3 {
+    color: #000;                /* Cor do texto preto */
+    font-size: 1.438rem;        /* Tamanho da fonte */
+    margin-top: 16px;           /* Margem superior de 16px */
+    font-weight: 600;           /* Peso da fonte */
+}
+
+/* Estilos para a seta (arrow) dentro de um cartão individual */
+.card-item .arrow {
+    display: flex;              /* Exibir como um contêiner flexível */
+    align-items: center;        /* Alinhar itens ao centro verticalmente */
+    justify-content: center;    /* Justificar conteúdo ao centro horizontalmente */
+    transform: rotate(-35deg);  /* Rodar a seta em -35 graus */
+    height: 40px;               /* Altura da seta */
+    width: 40px;                /* Largura da seta */
+    color: #000;                /* Cor da seta */
+    border: 1px solid #000;     /* Borda da seta */
+    border-radius: 50%;         /* Borda arredondada da seta */
+    margin-top: 20px;           /* Margem superior de 20px */
+    transition: 0.2s ease;      /* Transição suave */
+}
+
+/* Efeito de cor ao passar o rato sobre a seta no cartão */
+.card-list .card-item:hover .arrow  {
+    background: #000;           /* Fundo preto ao passar o rato sobre a seta */
+    color: #fff;                /* Cor do texto da seta ao passar o rato sobre ela */
+}
+
+/* Media query para ecrãs com largura máxima de 1200px */
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;           /* Ajuste do preenchimento para dispositivos de largura até 1200px */
+    }
+}
+
+/* Media query para ecrãs com largura máxima de 980px */
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;           /* Centralização da lista de cartões para dispositivos até 980px */
+    }
+}

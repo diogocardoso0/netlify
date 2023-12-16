@@ -1,0 +1,15 @@
+/* Reset de estilos e definição da caixa de modelo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos da lista de cartões */
+.card-list {
+    margin-top: 20px;     /* Margem superior de 20 pixels */
+    margin-bottom: 20px;  /* Margem inferior de 20 pixels */
+    margin-left: 20px;    /* Margem esquerda de 20 pixels */
+    margin-right: 20px;   /* Margem direita de 20 pixels */
+}

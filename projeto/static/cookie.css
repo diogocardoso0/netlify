@@ -1,0 +1,109 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Definições globais para resetar margens e preenchimentos e definir a fonte padrão como Poppins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilo para o wrapper do elemento flutuante */
+.wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: -370px;
+  max-width: 345px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Exibe o wrapper quando a classe 'show' está presente */
+.wrapper.show {
+  right: 20px;
+}
+
+/* Estilo para o cabeçalho do wrapper */
+.wrapper header {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+/* Estilo para o ícone no cabeçalho */
+header i {
+  color: #4070f4;
+  font-size: 32px;
+}
+
+/* Estilo para o título no cabeçalho */
+header h2 {
+  color: #4070f4;
+  font-weight: 500;
+}
+
+/* Estilo para a secção de dados dentro do wrapper */
+.wrapper .data {
+  margin-top: 16px;
+}
+
+/* Estilo para os parágrafos dentro da secção de dados */
+.wrapper .data p {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Estilo para links dentro dos parágrafos */
+.data p a {
+  color: #4070f4;
+  text-decoration: none;
+}
+
+/* Estilo para links quando hover */
+.data p a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para a secção de botões dentro do wrapper */
+.wrapper .buttons {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilo para os botões dentro da secção de botões */
+.buttons .button {
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  background: #4070f4;
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: all 0.2s ease;
+}
+
+/* Estilo para o botão de aceitar quando hover */
+.buttons #acceptBtn:hover {
+  background-color: #034bf1;
+}
+
+/* Estilo para o botão de recusar */
+#declineBtn {
+  border: 2px solid #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+/* Estilo para o botão de recusar quando hover */
+#declineBtn:hover {
+  background-color: #4070f4;
+  color: #fff;
+}

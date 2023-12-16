@@ -1,0 +1,206 @@
+/* Reset de estilos e definição da família de fontes Poppins */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos do rodapé */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2b0d00);
+    color: #fff;
+    padding: 40px 0 30px;
+    font-size: 1rem; /* Utiliza uma unidade relativa */
+    line-height: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* Estilos da linha */
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Estilos da coluna */
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+/* Estilos do logotipo */
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+/* Estilos do título da coluna */
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Estilos do ID de email */
+.email-id {
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+    width: fit-content;
+}
+
+/* Estilos do item da lista */
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos do formulário */
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .fa-regular {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa-solid {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Estilos dos ícones sociais */
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Estilos da regra horizontal */
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+/* Estilos do texto de direitos autorais */
+.copyright {
+    text-align: center;
+}
+
+/* Estilos da sublinhado */
+.underline {
+    width: 100px;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+/* Animação de movimento para o sublinhado */
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Media query para ecrãs mais pequenos */
+@media (max-width: 700px) {
+    footer {
+        bottom: unset;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 15%;
+    }
+}
+
+/* Estilos específicos para um relógio no rodapé */
+.relogio-footer {
+    display: inline-block;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 110px; /* Largura fixa */
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    color: rgb(30, 48, 80);
+}
+
+.fa-regular.fa-clock {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#txt {
+    font-size: 18px;
+}

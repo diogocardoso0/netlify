@@ -1,0 +1,7 @@
+/* Reset de estilos e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Definindo a família de fontes padrão para Poppins ou uma fonte sans-serif genérica */
+    box-sizing: border-box; /* Configurando a caixa de modelo para incluir a borda no cálculo do tamanho total */
+}

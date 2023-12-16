@@ -1,0 +1,93 @@
+/* Reset de estilos e definição da caixa de modelo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos da lista de cartões usando um layout de grelha */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Layout responsivo com colunas auto-ajustáveis */
+    max-width: 1250px;   /* Largura máxima da lista de cartões */
+    padding-top: 0px;
+    margin: 10px auto;   /* Margem superior e inferior de 10px, e margem lateral automática */
+    padding: 10px;       /* Preenchimento interno de 10px */
+    gap: 10px;           /* Espaçamento entre os cartões */
+}
+
+/* Estilos para o título (h3) dentro da lista de cartões */
+.card-list h3 {
+    margin-bottom: 10px; /* Margem inferior de 10px para o título */
+}
+
+/* Estilos para o parágrafo (p) dentro da lista de cartões */
+.card-list p {
+    color: black;        /* Cor do texto preto */
+}
+
+/* Estilos gerais para os cartões individuais */
+.card-list .card-item {
+    background: #fff;           /* Fundo branco para os cartões */
+    padding: 8px;               /* Preenchimento interno de 8px */
+    border-radius: 8px;         /* Borda arredondada */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04); /* Sombra suave */
+    list-style: none;           /* Remover estilos de lista padrão */
+    cursor: pointer;            /* Cursor ao passar por cima */
+    text-decoration: none;      /* Remover sublinhado padrão */
+    border: 2px solid transparent; /* Borda inicial transparente */
+    transition: border 0.5s ease; /* Transição suave para a borda */
+}
+
+/* Efeito de borda ao passar o rato sobre o cartão */
+.card-list .card-item:hover {
+    border: 2px solid #000;     /* Borda preta ao passar o rato sobre o cartão */
+}
+
+/* Estilos para a imagem dentro do cartão */
+.card-list .card-item img {
+    width: 100%;                /* Imagem com largura de 100% do seu contentor */
+    aspect-ratio: 16/9;         /* Proporção de 16:9 para manter a relação de aspecto */
+    border-radius: 8px;         /* Borda arredondada */
+    object-fit: cover;          /* Ajustar a imagem para cobrir o contentor mantendo as proporções */
+}
+
+/* Estilos para a etiqueta (span) dentro do cartão */
+.card-list span {
+    display: inline-block;      /* Mostrar em linha, respeitando as margens superior e inferior */
+    background: #F7DFF5;        /* Fundo de cor específica */
+    margin-top: 32px;           /* Margem superior de 32px */
+    padding: 8px 15px;          /* Preenchimento interno */
+    font-size: 0.75rem;         /* Tamanho da fonte */
+    border-radius: 50px;        /* Borda arredondada */
+    font-weight: 600;           /* Peso da fonte */
+}  
+
+/* Estilos específicos para uma etiqueta com a classe 'maia' */
+.card-list .maia {
+    background-color: #d1e8ff;  /* Cor de fundo específica */
+    color: #2968a8;             /* Cor do texto específica */
+}
+
+/* Estilos específicos para uma etiqueta com a classe 'gueifães' */
+.card-list .gueifães {
+    background-color: #d6f8d6;  /* Cor de fundo específica */
+    color: #205c20;             /* Cor do texto específica */
+}
+
+/* Estilos para o título (h3) dentro de um cartão individual */
+.card-item h3 {
+    color: #000;                /* Cor do texto preto */
+    font-size: 1.438rem;        /* Tamanho da fonte */
+    margin-top: 16px;           /* Margem superior de 16px */
+    font-weight: 600;           /* Peso da fonte */
+}
+
+/* Estilos para a seta (arrow) dentro de um cartão individual */
+.card-item .arrow {
+    display: flex;              /* Exibir como um contêiner flexível */
+    align-items: center;        /* Alinhar itens ao centro verticalmente */
+    justify-content: center;    /* Justificar conteúdo ao centro horizontalmente */
+    transform: rotate(-35deg);  /* Rodar a seta em -35 graus */
+}

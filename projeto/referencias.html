@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <!-- Definição do conjunto de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Definição da viewport para responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Agrupamento de Escolas da Maia</title>
+
+    <!-- Ícone da página (favicon)-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="static/favicon-32x32.png" sizes="32x32" type="image/png">
+
+    <!-- Folha de estilo (CSS) -->
+    <link rel="stylesheet" href="style/estilo.css">
+    <!-- Script para Font Awesome -->
+    <script src="https://kit.fontawesome.com/93f5e59f67.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Inclusão do Header -->
+        <link rel="stylesheet" href="static/header.css">
+        <a class="logo" href="/"><img src="static/logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="agrupamento.html">Agrupamento</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="referencias.html">Referências</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Início</a>
+            <a href="#">Agrupamento</a>
+            <a href="#">Alunos</a>
+            <a href="/contactos.html">Contactos</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="mobile.js"></script>
+    </header>
+
+    <main>
+
+        <div class="ref-pag">
+            <h1>Referências do Meu Site</h1>
+            <h2>1. Sites Utilizados</h2>
+
+            <p>
+                <a href="https://www.aemaia.pt/" target="_blank">AEMAIA - Associação Empresarial do Município de Águeda</a>
+            </p>
+            <p>
+                Este site serviu como inspiração e referência para o desenvolvimento do meu próprio site. Agradeço à AEMAIA pela inspiração e pelas boas práticas de design e organização de conteúdo.
+            </p>
+
+            <p>
+                <a href="https://www.youtube.com/@CodingLabYT" target="_blank">CodingLabYT - Canal no YouTube</a>
+            </p>
+            <p>
+                O canal CodingLabYT no YouTube foi uma valiosa fonte de aprendizado e inspiração para o desenvolvimento de aspectos específicos do meu site.
+            </p>
+
+            <p>
+                <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+            </p>
+            <p>
+                Utilizei os ícones do Font Awesome para aprimorar a estética e a usabilidade do meu site.
+            </p>
+
+            <p>
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+            </p>
+            <p>
+                A W3Schools foi uma valiosa fonte de referência para aprender e aprimorar habilidades de desenvolvimento web durante o processo de criação do meu site.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <link rel="stylesheet"><link rel="stylesheet" href="static/footer.css">
+        <!-- Inclusão do Footer -->
+        <div class="row">
+            <div class="col">
+                <img src="static/logo.png" alt="logo" class="logo">
+                <p> Os edifícios existentes foram remodelados, garantindo a satisfação das atuais exigências de conforto, segurança e acessibilidade. Os espaços exteriores da escola foram remodelados, criando-se uma separação entre zonas de acesso pedonal e zonas de acesso automóvel e estacionamento.</p>
+            </div>
+            <div class="col">
+                <h3>Morada<div class="underline"><span></span></div></h3>
+                <p>Avenida Luís Camões</p>
+                <p>4470-194, Maia</p>
+                <p class="email-id">geral@aemaia.com</p>
+                <h4>+351 229 478 480</h4>
+            </div>
+            <div class="col">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="index.html">Início</a> </li>
+                    <li><a href="agrupamento.html">Agrupamento</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="referencias.html">Referências </a> </li>
+					<li><a href="password.html">Criar Password </a> </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter<div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Insira o seu e-mail" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i></div>
+
+
+                <div class="relogio-footer">
+                    <body onload="startTime()">
+
+                        <div class="relogio-footer">
+                            <div class="clock-container">
+                                <i class="fa-regular fa-clock"></i>
+                                <div id="txt"></div>
+                            </div>
+                        </div>
+
+
+                        <script>
+                            function startTime() {
+                                const today = new Date();
+                                let h = today.getHours();
+                                let m = today.getMinutes();
+                                let s = today.getSeconds();
+                                m = checkTime(m);
+                                s = checkTime(s);
+                                document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                                setTimeout(startTime, 1000);
+                            }
+
+                            function checkTime(i) {
+                                if (i < 10) {
+                                    i = "0" + i
+                                }; // add zero in front of numbers < 10
+                                return i;
+                            }
+                        </script>
+
+
+                    </body>
+                </div>
+            </div>
+        </div>
+        <hr>
+		  <p class="copyright">Copyright © 2023 | Agrupamento de Escolas da Maia</p>
+		  <p class="copyright">Criado por Diogo Cardoso al25256@aemaia.com</p>
+		  </footer>
+	  
+		  </body>
+	  
+	  </html>

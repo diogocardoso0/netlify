@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <!-- Definição do conjunto de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Definição da viewport para responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Agrupamento de Escolas da Maia</title>
+
+    <!-- Ícone da página (favicon)-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="static/favicon-32x32.png" sizes="32x32" type="image/png">
+
+    <!-- Folha de estilo (CSS) -->
+    <link rel="stylesheet" href="static/estilo.css">
+    <!-- Script para Font Awesome -->
+    <script src="https://kit.fontawesome.com/93f5e59f67.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Inclusão do Header -->
+        <link rel="stylesheet" href="static/header-home.css">
+        <div class="container">
+            <nav>
+                <img src="static/logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="agrupamento.html">Agrupamento</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+                <button class="btn"><i class="fa-regular fa-newspaper" style="color: #ffffff;"></i>Referências</button>
+            </nav>
+            <div class="content">
+                <h1>AE Maia</h1>
+                <p>A oferta de uma grande diversidade de cursos, nomeadamente técnicos/tecnológicos, quer em ensino diurno, quer em ensino noturno, tem sido uma mais-valia da Escola Secundária da Maia.</p>
+                <form>
+                    <input type="text" placeholder="Procurar Notícias">
+                    <button type="submit" class="btn">Procurar<i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Start Card-list -->
+        <div class="card-list">
+            <link rel="stylesheet" href="style/card-list.css">
+            <a href="#" class="card-item">
+                <img src="img/esm1.jpg" alt="Card Image">
+                <span class="maia">Maia</span>
+                <h3>Escola Secundária da Maia</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="img/ebs1.jpg" alt="Card Image">
+                <span class="gueifães">Gueifães</span>
+                <h3>Escola Básica de Gueifães</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon" style="color: #ffffff;"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="img/esm2.jpeg" alt="Card Image">
+                <span class="gueifães">Gueifães</span>
+                <h3>EB/JI nº1 de Gueifães</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="img/esm2.jpeg" alt="Card Image">
+                <span class="gueifães">Gueifães</span>
+                <h3>EB/JI nº2 de Gueifães</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+        </div>
+
+        <!-- Start Slider -->
+        <div class="two-column-layout">
+            <section class="img-slider">
+                <link rel="stylesheet" href="style/img-slider.css" />
+                <script src="script/img-slider.js" defer></script>
+                <i class="fa-solid fa-arrow-left button" id="prev"></i>
+                <div class="image-container">
+                    <div class="carousel">
+                        <img src="img/esm1.jpg" alt="" />
+                        <img src="img/esm1.jpg" alt="" />
+                        <img src="img/esm1.jpg" alt="" />
+                        <img src="img/esm1.jpg" alt="" />
+                    </div>
+                    <i class="fa-solid fa-arrow-right button" id="next"></i>
+                </div>
+            </section>
+            <div class="text-content">
+                <link rel="stylesheet" href="style/img-slider.css" />
+                <h3>ESM<br>Escola Secundária da Maia<br></h3>
+                <p>A Escola Secundária da Maia deu o primeiro passo quando, pelo Dec.-Lei n.º 457, de 28 de Outubro de 1971, foi criada a Escola Técnica da Maia. Em Julho de 1972, o seu Diretor, Dr. Dias Leitão, deu início ao difícil e complexo processo de instalação de uma escola a que faltava quase tudo, exceto o empenhamento total dos recursos humanos de que à partida dispunha: o Diretor e pouco mais de uma dezena de professores.</p>
+            </div>
+        </div>
+        <!-- End Slider -->
+
+    </main>
+
+    <div id="cookiePopup" style="display: block;">
+        <link rel="stylesheet" href="static/cookie.css" />
+        <!-- Boxicons CSS -->
+        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+        <script src="static/script.js" defer></script>
+        <!-- Conteúdo do pop-up de consentimento de cookies -->
+        <div class="wrapper">
+            <header>
+                <i class="bx bx-cookie"></i>
+                <h2>Política de cookies</h2>
+            </header>
+
+            <div class="data">
+                <p>Utilizamos “cookies” para fornecer serviços de qualidade e avaliar o seu desempenho visando melhorar a sua experiência. Para mais informações, consulte a nossa <a href="#"> política de privacidade...</a></p>
+            </div>
+
+            <div class="buttons">
+                <button class="button" id="acceptBtn">Todos</button>
+                <button class="button" id="declineBtn">Necessário</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <link rel="stylesheet">
+        <link rel="stylesheet" href="static/footer.css">
+        <!-- Insere o Footer -->
+        <div class="row">
+            <div class="col">
+                <img src="static/logo.png" alt="logo" class="logo">
+                <p> Os edifícios existentes foram remodelados, garantido a satisfação das atuais exigências de conforto, segurança e acessibilidade. Os espaços exteriores da escola foram remodelados, criando-se uma separação entre zonas de acesso pedonal e zonas de acesso automóvel e estacionamento.</p>
+            </div>
+            <div class="col">
+                <h3>Morada<div class="underline"><span></span></div></h3>
+                <p>Avenida Luís Camões</p>
+                <p>4470-194, Maia</p>
+                <p class="email-id">geral@aemaia.com</p>
+                <h4>+351 229 478 480</h4>
+            </div>
+            <div class="col">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="index.html">Início</a> </li>
+                    <li><a href="agrupamento.html">Agrupamento</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="referencias.html">Referências </a> </li>
+					<li><a href="password.html">Criar Password </a> </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter<div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Insira o seu e-mail" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+
+            <div class="relogio-footer">
+                <body onload="startTime()">
+
+                    <div class="relogio-footer">
+                        <div class="clock-container">
+                            <i class="fa-regular fa-clock"></i>
+                            <div id="txt"></div>
+                        </div>
+                    </div>
+
+
+                    <script>
+                        function startTime() {
+                            const today = new Date();
+                            let h = today.getHours();
+                            let m = today.getMinutes();
+                            let s = today.getSeconds();
+                            m = checkTime(m);
+                            s = checkTime(s);
+                            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                            setTimeout(startTime, 1000);
+                        }
+
+                        function checkTime(i) {
+                            if (i < 10) {
+                                i = "0" + i
+                            }; // add zero in front of numbers < 10
+                            return i;
+                        }
+                    </script>
+
+
+                </body>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright © 2023 | Agrupamento de Escolas da Maia</p>
+        <p class="copyright">Criado por Diogo Cardoso al25256@aemaia.com</p>
+    </footer>
+
+</body>
+
+</html>
