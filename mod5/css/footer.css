@@ -1,0 +1,23 @@
+footer {
+  background: linear-gradient(to right, #004AAD, #0CC0DF);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+footer img {
+  max-height: 50px;
+}
